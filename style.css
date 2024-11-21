@@ -1,0 +1,237 @@
+/* Common styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif; 
+    background-color: #2b2b2b; 
+    color: #ffffff; 
+    text-align: center; 
+    font-size: 18px; 
+}
+
+/* Navigation bar */
+.navbar {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 30px; 
+    background-color: rgb(14, 14, 14); 
+}
+
+/* Logo */
+.logo img {
+    width: 200px; 
+}
+
+/* EXPLORE and links */
+.nav-explore {
+    text-align: left; 
+}
+
+/* EXPLORE text styles */
+.explore-text {
+    color: #FFD700; 
+    margin-right: 20px; 
+    font-size: 18px;
+}
+
+/* Navigation links */
+.nav-links {
+    display: flex; 
+    gap: 30px; 
+    list-style: none; 
+    margin-top: 8px;
+}
+
+/* Pens, Projects, Posts, Collections */
+.bold-text {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+/* Grey for Spark */
+.grey-text {
+    color: #7f8c8d; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+/* Styles for Search, Create, Log In and Sign Up buttons */
+.auth-buttons {
+    display: flex; 
+    align-items: center; 
+}
+
+.create {
+    background-color: rgb(63, 63, 63); 
+    color: white; 
+    border: none; 
+    padding: 20px 20px; 
+    margin-right: 20px; 
+    cursor: pointer; 
+    position: relative;
+    border-radius: 3px; 
+    font-size: 20px;
+}
+
+.create::after {
+    content: '▼'; /* Down arrow */
+    color: rgb(82, 173, 46); 
+    margin-left: 5px; 
+}
+
+.search {
+    background-color: transparent; 
+    border: none; 
+    color: #7f8c8d; 
+    font-size: 30px; 
+    cursor: pointer; 
+    margin-right: 20px; 
+}
+
+.login {
+    background-color: rgb(63, 63, 63); 
+    color: white; 
+    border: none; 
+    padding: 20px 20px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+    border-radius: 3px; 
+    font-size: 20px;
+}
+
+.signup {
+    background-color: rgb(63, 63, 63); 
+    color: white; 
+    border: none; 
+    padding: 20px 20px; 
+    cursor: pointer; 
+    border-radius: 3px; 
+    font-size: 20px;
+}
+
+/* The main container for content */
+.content-wrapper {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    padding: 40px 0px; 
+    max-width: 1300px; 
+    margin: 0 auto; 
+    text-align: left; 
+}
+
+/* Styles for text block */
+.main-content {
+    max-width: 50%; 
+    padding-right: 20px; 
+}
+
+/* Increasing the size of the header text */
+.main-content h1 {
+    color: #c7d7d8;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 40px; 
+    margin-bottom: 20px; 
+}
+
+.highlight{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+}
+
+.main-content p {
+    color: #c7d7d8;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-size: 30px; 
+    margin-bottom: 20px; 
+}
+
+/* Action Buttons */
+.signup-button {
+    background-color: rgb(82, 173, 46); 
+    color: rgb(0, 0, 0); 
+    border: none; 
+    padding: 20px 20px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+    border-radius: 3px; 
+    font-size: 30px;
+}
+
+.learn-more {
+    background-color: rgb(14, 14, 14); 
+    color: white; 
+    border: none; 
+    padding: 20px 20px; 
+    margin-right: 10px; 
+    cursor: pointer; 
+    border-radius: 3px; 
+    font-size: 28px;
+}
+
+/* Styles for side screenshot */
+.screenshot {
+    max-width: 50%; 
+    text-align: left; 
+    box-shadow: -25px 4px 177px -5px rgba(0,0,0,0.74); 
+}
+
+.screenshot-title {
+    color: #ffffff; 
+    font-size: 18px; 
+    margin-bottom: 5px; 
+}
+
+.title {
+    color: rgb(60, 233, 245);
+}
+
+.screenshot img {
+    width: 100%; 
+    max-width: 500px; 
+}
+
+/* Footer */
+footer {
+    background-color: #1e1e1e; 
+    padding: 20px; 
+    margin-top: 40px; 
+    border: 0.5px solid rgb(141, 141, 141); 
+    border-radius: 2px; 
+}
+
+.footer-links {
+    display: flex; 
+    justify-content: center; 
+    gap: 0; 
+}
+
+.teams, .education, .privacy, .writing {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.footer-links a {
+    color: white; 
+    text-decoration: none; 
+    text-align: center; 
+    padding: 10px 20px; 
+    position: relative; 
+}
+
+/* Separators between links */
+.footer-links a:not(:last-child) {
+    border-right: 0.5px solid white; 
+}
